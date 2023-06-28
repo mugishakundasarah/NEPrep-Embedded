@@ -12,7 +12,7 @@ DHT dht(14, DHT11); // D5 on esp8266
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 const char* ssid = "your wifi";          // Your WiFi SSID
 const char* password = "your wifi password";  // Your WiFi password
-const char* serverAddress = "http://192.168.8.137:3000"; // ip address and the port on backend
+const char* serverAddress = "http://192.168.8.137:4000"; // ip address and the port on backend
 void setup()
 {
   Serial.begin(115200);
