@@ -84,7 +84,6 @@ void sendDataToServer(float temperature, float humidity)
   url += "/api/data";
   url += "?temperature=" + String(temperature);
   url += "&humidity=" + String(humidity);
-  Serial.println("Heeeeee");
   // Send HTTP GET request
   http.begin(client, url);
   http.setTimeout(10000); // Set timeout to 10 seconds (for example)
